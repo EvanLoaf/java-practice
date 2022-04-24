@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue xmlns="https://www.gmail.com/evanloafakahaitao"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="https://www.gmail.com/evanloafakahaitao schema.xsd">
+    <stock>
+        <stockId>120</stockId>
+        <stockCode>15xx7dv2o3</stockCode>
+        <stockName>Tesla</stockName>
+        <category>
+            <categoryId>55</categoryId>
+            <categoryName>manufacturing</categoryName>
+            <categoryDescription>Very long description for the supastock</categoryDescription>
+        </category>
+        <stockDailyRecords>
+            <stockDailyRecord>
+                <recordId>2</recordId>
+                <recordPriceOpen>4.4</recordPriceOpen>
+                <recordPriceClose>2.2</recordPriceClose>
+                <recordPriceChange>6.6</recordPriceChange>
+                <recordVolume>3</recordVolume>
+                <recordDate>2020-10-21</recordDate>
+            </stockDailyRecord>
+            <stockDailyRecord>
+                <recordId>1</recordId>
+                <recordPriceOpen>3</recordPriceOpen>
+                <recordPriceClose>4.3</recordPriceClose>
+                <recordPriceChange>5.6</recordPriceChange>
+                <recordVolume>6</recordVolume>
+                <recordDate>2020-10-20</recordDate>
+            </stockDailyRecord>
+        </stockDailyRecords>
+    </stock>
+    <stock>
+        <stockId>555</stockId>
+        <stockCode>123456abcd</stockCode>
+        <stockName>GameStop</stockName>
+        <category>
+            <categoryId>22</categoryId>
+            <categoryName>retail</categoryName>
+            <categoryDescription>Wow gamestop is cool</categoryDescription>
+        </category>
+        <stockDailyRecords>
+            <stockDailyRecord>
+                <recordId>1</recordId>
+                <recordPriceOpen>2</recordPriceOpen>
+                <recordPriceClose>3</recordPriceClose>
+                <recordPriceChange>4</recordPriceChange>
+                <recordVolume>10</recordVolume>
+                <recordDate>2020-10-20</recordDate>
+            </stockDailyRecord>
+        </stockDailyRecords>
+    </stock>
+</catalogue>

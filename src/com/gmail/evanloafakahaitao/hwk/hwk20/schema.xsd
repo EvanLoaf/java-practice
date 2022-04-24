@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shop:schema xmlns:shop="http://www.w3.org/2001/XMLSchema"
+             xmlns="https://www.gmail.com/evanloafakahaitao"
+             targetNamespace="https://www.gmail.com/evanloafakahaitao"
+             elementFormDefault="qualified"
+             attributeFormDefault="qualified">
+    <shop:element name="catalogue" type="root"/>
+    <shop:complexType name="root">
+        <shop:sequence>
+            <shop:element name="stock" type="stockType" minOccurs="0" maxOccurs="unbounded"/>
+        </shop:sequence>
+    </shop:complexType>
+    <shop:complexType name="stockType">
+        <shop:sequence>
+            <shop:group ref="stockGroup"/>
+            <shop:element name="category" type="categoryType"/>
+            <shop:element name="stockDailyRecords" type="stockDailyRecordsType"/>
+        </shop:sequence>
+    </shop:complexType>
+    <shop:group name="stockGroup">
+        <shop:sequence>
+            <shop:element name="stockId" type="stockIdType"/>
+            <shop:element name="stockCode" type="stockCodeType"/>
+            <shop:element name="stockName" type="stockNameType"/>
+        </shop:sequence>
+    </shop:group>
+    <shop:simpleType name="stockIdType">
+        <shop:restriction base="shop:integer">
+            <shop:pattern value="[0-9]+"/>
+        </shop:restriction>
+    </shop:simpleType>
+    <shop:simpleType name="stockCodeType">
+        <shop:restriction base="shop:string">
+            <shop:length value="10"/>
+        </shop:restriction>
+    </shop:simpleType>
+    <shop:simpleType name="stockNameType">
+        <shop:restriction base="shop:string">
+            <shop:enumeration value="Tesla"/>
+            <shop:enumeration value="AMC"/>
+            <shop:enumeration value="GameStop"/>
+        </shop:restriction>
+    </shop:simpleType>
+    <shop:complexType name="categoryType">
+        <shop:sequence>
+            <shop:element name="categoryId" type="categoryIdType"/>
+            <shop:element name="categoryName" type="categoryNameType"/>
+            <shop:element name="categoryDescription" type="categoryDescriptionType"/>
+        </shop:sequence>
+    </shop:complexType>
+    <shop:simpleType name="categoryIdType">
+        <shop:restriction base="shop:integer">
+            <shop:pattern value="[0-9]{1,2}"/>
+        </shop:restriction>
+    </shop:simpleType>
+    <shop:simpleType name="categoryNameType">
+        <shop:restriction base="shop:string">
+            <shop:enumeration value="entertainment"/>
+            <shop:enumeration value="retail"/>
+            <shop:enumeration value="manufacturing"/>
+        </shop:restriction>
+    </shop:simpleType>
+    <shop:simpleType name="categoryDescriptionType">
+        <shop:restriction base="shop:string">
+            <shop:maxLength value="50"/>
+        </shop:restriction>
+    </shop:simpleType>
+    <shop:complexType name="stockDailyRecordsType">
+        <shop:sequence>
+            <shop:element name="stockDailyRecord" maxOccurs="20" minOccurs="0">
+                <shop:complexType>
+                    <shop:sequence>
+                        <shop:element name="recordId" type="shop:integer"/>
+                        <shop:element name="recordPriceOpen" type="shop:float"/>
+                        <shop:element name="recordPriceClose" type="shop:float"/>
+                        <shop:element name="recordPriceChange" type="shop:float"/>
+                        <shop:element name="recordVolume" type="shop:long"/>
+                        <shop:element name="recordDate" type="shop:date"/>
+                    </shop:sequence>
+                </shop:complexType>
+            </shop:element>
+        </shop:sequence>
+    </shop:complexType>
+</shop:schema>

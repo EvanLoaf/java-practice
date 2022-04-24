@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<order:schema xmlns:order="http://www.w3.org/2001/XMLSchema"
+              xmlns="shipping.com"
+              targetNamespace="shipping.com"
+              elementFormDefault="qualified">
+    <order:element name="PurchaseOrder" type="PurchaseOrderType"/>
+    <order:complexType name="PurchaseOrderType">
+        <order:sequence>
+            <order:element name="Item" type="ItemType" maxOccurs="unbounded"/>
+        </order:sequence>
+        <order:attribute name="OrderDate" type="order:date"/>
+    </order:complexType>
+    <order:complexType name="ItemType">
+        <order:sequence>
+            <order:element name="ProductName" type="order:string"/>
+            <order:element name="Quantity" type="order:integer"/>
+            <order:element name="USPrice" type="order:float"/>
+            <order:element name="Comment" type="order:string" minOccurs="0"/>
+            <order:element name="ShipDate" type="order:date" minOccurs="0"/>
+        </order:sequence>
+        <order:attribute name="PartNumber" type="order:string"/>
+    </order:complexType>
+</order:schema>

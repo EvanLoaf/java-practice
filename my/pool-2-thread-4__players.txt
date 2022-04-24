@@ -1,0 +1,10 @@
+Player{name='NameXD-pool-2-thread-4-0', age=37, isActive=true}
+Player{name='NameXD-pool-2-thread-4-1', age=28, isActive=false}
+Player{name='NameXD-pool-2-thread-4-2', age=20, isActive=false}
+Player{name='NameXD-pool-2-thread-4-3', age=35, isActive=false}
+Player{name='NameXD-pool-2-thread-4-4', age=37, isActive=false}
+Player{name='NameXD-pool-2-thread-4-5', age=27, isActive=true}
+Player{name='NameXD-pool-2-thread-4-6', age=30, isActive=false}
+Player{name='NameXD-pool-2-thread-4-7', age=21, isActive=true}
+Player{name='NameXD-pool-2-thread-4-8', age=33, isActive=false}
+Player{name='NameXD-pool-2-thread-4-9', age=33, isActive=true}

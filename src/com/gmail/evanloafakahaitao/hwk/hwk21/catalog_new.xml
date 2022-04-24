@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalog xmlns="www.bookshop.by">
+    <book id="bk100">
+        <author>author10</author>
+        <title>title0</title>
+        <genre>School</genre>
+        <price>12.99</price>
+        <publish_date>2020-11-20</publish_date>
+        <description>descr0</description>
+    </book>
+    <book id="bk101">
+        <author>author11</author>
+        <title>title1</title>
+        <genre>School</genre>
+        <price>12.99</price>
+        <publish_date>2020-11-20</publish_date>
+        <description>descr1</description>
+    </book>
+    <book id="bk102">
+        <author>author12</author>
+        <title>title2</title>
+        <genre>School</genre>
+        <price>12.99</price>
+        <publish_date>2020-11-20</publish_date>
+        <description>descr2</description>
+    </book>
+    <book id="bk103">
+        <author>author13</author>
+        <title>title3</title>
+        <genre>School</genre>
+        <price>12.99</price>
+        <publish_date>2020-11-20</publish_date>
+        <description>descr3</description>
+    </book>
+    <book id="bk104">
+        <author>author14</author>
+        <title>title4</title>
+        <genre>School</genre>
+        <price>12.99</price>
+        <publish_date>2020-11-20</publish_date>
+        <description>descr4</description>
+    </book>
+</catalog>

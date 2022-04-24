@@ -1,0 +1,5 @@
+Player{name='NameXD-pool-1-thread-5-0', age=38, isActive=false}
+Player{name='NameXD-pool-1-thread-5-1', age=37, isActive=true}
+Player{name='NameXD-pool-1-thread-5-2', age=25, isActive=false}
+Player{name='NameXD-pool-1-thread-5-3', age=40, isActive=false}
+Player{name='NameXD-pool-1-thread-5-4', age=36, isActive=false}

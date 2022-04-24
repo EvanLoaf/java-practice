@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookshop:schema xmlns:bookshop="http://www.w3.org/2001/XMLSchema" 
+                xmlns="www.bookshop.by" 
+                targetNamespace="www.bookshop.by" 
+                elementFormDefault="qualified">
+    <bookshop:element name="catalog" type="root"/>
+    <bookshop:complexType name="root">
+        <bookshop:sequence>
+            <bookshop:element name="book" type="bookType" maxOccurs="unbounded"/>
+        </bookshop:sequence>
+    </bookshop:complexType>
+    <bookshop:complexType name="bookType">
+        <bookshop:sequence>
+            <bookshop:element name="author" type="bookshop:string"/>
+            <bookshop:element name="title" type="bookshop:string"/>
+            <bookshop:element name="genre">
+                <bookshop:simpleType>
+                    <bookshop:restriction base="bookshop:string">
+                        <bookshop:enumeration value="Fantasy"/>
+                        <bookshop:enumeration value="Computer"/>
+                        <bookshop:enumeration value="Animals"/>
+                        <bookshop:enumeration value="School"/>
+                    </bookshop:restriction>
+                </bookshop:simpleType>
+            </bookshop:element>
+            <bookshop:element name="price" type="bookshop:float"/>
+            <bookshop:element name="publish_date" type="bookshop:date"/>
+            <bookshop:element name="description" type="bookshop:string"/>
+        </bookshop:sequence>
+        <bookshop:attribute name="id">
+            <bookshop:simpleType>
+                <bookshop:restriction base="bookshop:string">
+                    <bookshop:pattern value="bk[0-9]{3,}"/>
+                </bookshop:restriction>
+            </bookshop:simpleType>
+        </bookshop:attribute>
+    </bookshop:complexType>
+</bookshop:schema>

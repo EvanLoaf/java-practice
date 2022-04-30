@@ -10,3 +10,4 @@ set path="C:\Program Files\WinRAR\"
 rar a ..\screenshots
 cd..
 rmdir /s /q %folder%
+pause
